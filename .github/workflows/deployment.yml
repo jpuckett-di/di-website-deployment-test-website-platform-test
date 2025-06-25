@@ -22,6 +22,7 @@ jobs:
         with:
           app-id: ${{ vars.GH_DEPLOY_TEST_TRIGGER_APP_ID }}
           private-key: ${{ secrets.GH_DEPLOY_TEST_TRIGGER_APP_PRIVATE_KEY }}
+          owner: jpuckett-di
           repositories: di-website-deployment-test-playwright-test
 
       - name: Run Playwright Test Suite
