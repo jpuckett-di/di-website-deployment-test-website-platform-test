@@ -27,4 +27,4 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
-          gh api -X POST /repos/jpuckett-di/di-website-deployment-test-playwright-test/actions/workflows/170540726/dispatches
+          gh api -X POST /repos/jpuckett-di/di-website-deployment-test-playwright-test/actions/workflows/daily-deploy-test.yml/dispatches
